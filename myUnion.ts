@@ -35,3 +35,5 @@ const data: (number | string)[] = ["1", 2, "3"]
 let pi:3.14 = 3.14
 pi = 3.14
 
+export {}
+
