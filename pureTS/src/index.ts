@@ -13,7 +13,7 @@
 
 
 class User {
-  private _courseCount = 1
+  protected _courseCount = 1
 
   private readonly city: string = 'bangalore'
   constructor(public name: string, public email: string){
@@ -39,6 +39,12 @@ class User {
 
 }
 
+class subUser extends User {
+  isFamily: boolean = true
+  changeCourseCount(){
+    this._courseCount = 4
+  }
+}
 
 const sharat = new User('sharat', 's@s.com')
 // sharat.city

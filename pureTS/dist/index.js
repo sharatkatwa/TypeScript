@@ -33,6 +33,15 @@ class User {
         this._courseCount = courseNum;
     }
 }
+class subUser extends User {
+    constructor() {
+        super(...arguments);
+        this.isFamily = true;
+    }
+    changeCourseCount() {
+        this._courseCount = 4;
+    }
+}
 const sharat = new User('sharat', 's@s.com');
 // sharat.city
 // sharat.tokenDelete()
